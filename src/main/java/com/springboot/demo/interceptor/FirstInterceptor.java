@@ -22,6 +22,7 @@ public class FirstInterceptor extends HandlerInterceptorAdapter {
 //            response.getWriter().write("没有权限");
 //            return false;
 //        }
+
         System.out.println("FirstInterceptor preHandle...");
         return super.preHandle(request,response,handler);
     }
