@@ -23,6 +23,7 @@ public class HelloController {
      */
     @RequestMapping("/hello")
     public String hello(String name,Model model){
+        System.out.println("controller方法");
         List<User> userList = userService.getAllUsers();
         model.addAttribute("name",name);
         model.addAttribute("users",userList);
